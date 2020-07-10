@@ -6,7 +6,14 @@ import GroceriesList from '../src/components/groceries-list/groceries-list.compo
 function App() {
   return (
     <div className="App">
-      <GroceriesList />
+      <header>
+        <h1>Grocery List</h1>
+      </header>
+      <main>
+        <GroceriesList />
+      </main>
+      <footer>
+      </footer>
     </div>
   );
 }

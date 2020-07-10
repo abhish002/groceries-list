@@ -1,0 +1,11 @@
+.groceries-list {
+  display: flex;
+  margin: auto;
+  flex-flow: column;
+
+  @media screen and (min-width: 1024px) {
+    width: 98rem;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+}

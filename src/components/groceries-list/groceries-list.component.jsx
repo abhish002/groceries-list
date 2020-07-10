@@ -8,16 +8,13 @@ const GroceriesList = () => {
   const [groceries, setGroceries] = useState([]);
 
   useEffect(() => {
-    setGroceries(data.groceries)
-    return () => {
-
-    }
+    setGroceries(data.groceries);
   }, []);
 
   return (
     <div className='groceries-list'>
-      <h1>List of Groceries</h1>
       {
+        groceries.length > 0 &&
         groceries.map(groceryItem => (
           <GroceryItem key={groceryItem.item} groceryItem={groceryItem} />
         ))

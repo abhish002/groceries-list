@@ -1,0 +1,55 @@
+@import '../../styles/styles.scss';
+
+.grocery-item {
+  background-color: $beige;
+  padding: 1rem 1rem;
+  display: flex;
+  border-right: 0.5rem solid $accent-red;
+  border-bottom: 0.5rem solid $accent-red;
+  height: 25rem;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .grocery-item__qty {
+    align-self: flex-end;
+    color: $accent-red;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 2rem;
+    width: 22%;
+  }
+
+  .grocery-item__item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .grocery-item__item-container__item {
+      display: flex;
+      font-size: 3.6rem;
+      font-weight: bold;
+      border-bottom: 1px solid lightslategray;
+      width: 100%;
+    }
+
+    .grocery-item__item-container__type {
+      display: flex;
+      width: 100%;
+      font-size: smaller;
+      font-weight: bold;
+    }
+  }
+
+  .grocery-item__category {
+    align-self: flex-start;
+    text-transform: uppercase;
+    color: $accent-red;
+  }
+}
