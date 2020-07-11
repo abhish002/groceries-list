@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-
+import './components/error-boundary/error-boundary.component';
 import GroceriesList from '../src/components/groceries-list/groceries-list.component';
+import ErrorBoundary from './components/error-boundary/error-boundary.component';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
         <h1>Grocery List</h1>
       </header>
       <main>
-        <GroceriesList />
+        <ErrorBoundary>
+          <GroceriesList />
+        </ErrorBoundary>
       </main>
       <footer>
       </footer>

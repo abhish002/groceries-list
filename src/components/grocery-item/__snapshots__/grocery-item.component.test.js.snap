@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`grocery item component matches the snapshot 1`] = `
+<div
+  className="grocery-item"
+>
+  <div
+    className="grocery-item__qty"
+  >
+    QTY: 1
+  </div>
+  <div
+    className="grocery-item__item-container"
+  >
+    <div
+      className="grocery-item__item-container__item"
+    >
+      Milk
+    </div>
+    <div
+      className="grocery-item__item-container__type"
+    >
+      Organic 2% Milk
+    </div>
+  </div>
+  <div
+    className="grocery-item__category"
+  >
+    beverage
+  </div>
+</div>
+`;
