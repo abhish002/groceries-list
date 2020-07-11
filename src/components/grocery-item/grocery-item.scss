@@ -22,14 +22,12 @@
   }
 
   @media screen and (min-width: 1024px) {
-    margin-right: 2rem;
     width: 22%;
   }
 
   .grocery-item__item-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 
     .grocery-item__item-container__item {
       display: flex;
@@ -37,6 +35,7 @@
       font-weight: bold;
       border-bottom: 1px solid lightslategray;
       width: 100%;
+      line-height: initial;
     }
 
     .grocery-item__item-container__type {
