@@ -16,6 +16,7 @@ function App() {
         </ErrorBoundary>
       </main>
       <footer>
+        &copy; <span>Abhish Abraham</span>
       </footer>
     </div>
   );
