@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import './error-boundary.styles.scss';
 
 export default class ErrorBoundary extends Component {
-  state = {
-    error: undefined,
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: undefined
+    }
   }
 
   static getDerivedStateFromError(error) {
